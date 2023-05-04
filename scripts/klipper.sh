@@ -322,12 +322,12 @@ function install_klipper_packages() {
   read -r -a packages <<< "${packages}"
 
   ### Update system package info
-  status_msg "Updating package lists..."
-  if ! sudo apt-get update --allow-releaseinfo-change; then
-    log_error "failure while updating package lists"
-    error_msg "Updating package lists failed!"
-    exit 1
-  fi
+  #status_msg "Updating package lists..."
+  #if ! sudo apt-get update --allow-releaseinfo-change; then
+  #  log_error "failure while updating package lists"
+  #  error_msg "Updating package lists failed!"
+  #  exit 1
+  #fi
 
   ### Install required packages
   status_msg "Installing required packages..."
